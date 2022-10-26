@@ -40,7 +40,8 @@ app.delete('/api/task/:id', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.send(`<h1>API Works !!!</h1>`)
+        res.render('index')
+    // res.send(`<h1>API Works !!!</h1>`)
 });
 
 app.listen(3000, () => {
