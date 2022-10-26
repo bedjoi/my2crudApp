@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const path = require('path')
+const path = require('path');
+const { Pool } = require("pg");
 
 app.set("view engine", "ejs");
 
@@ -16,4 +17,5 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("Serveur démarré au port 3000!");
 });
+
 
